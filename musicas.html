@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon"  href="icon.png">
+	<title>Sons/Músicas FNAF</title>
+	
+
+</head>
+<body bgcolor="black">
+ <a style="color: purple;" href="index.html" >home /</a>
+	<a  style="color :purple;" href="teorias.html" >teorias /</a>
+	<a style="color : purple;" href="personagens.html" >personagens /</a>
+	<a  style="color : purple;" href="fangames.html"  >fangames /</a>
+	<a  style="color : purple;" href="lojafnaf.html" > loja / </a>
+	<a  style="color : gray;"> sons /</a>
+	<a  style="color : purple;" href="membro.html" >membro/</a>
+	<a  style="color : purple;" href="contatofnaf.html" >contato</a>
+<br>
+<br>
+<br>
+
+<table>
+	<tr>
+<th><audio controls ><source src="fnaf-3-minigame-music.mp3" type="audio/mpeg"></audio></th>
+	<th style="color:gray;"><p align="left">Música presente nos minigames do jogo, <br>mas especificamente no terceiro jogo da franquia </p></th>
+</tr>
+<tr>
+	<th><audio controls ><source src="2021.mp3" type="audio/mpeg"></audio></th>
+		<th style="color:gray;"><p align="left">Quando você perde o jogo você é atacado por um Animatronic<br> e ele aparece na sua tela e grita, isso é chamado de jumpscare,<br> aqui mostra os sons de jumpscare dos animatronics do jogo</p></th>
+</tr>
+<tr>
+	<th><audio controls ><source src="the-living-tombstone.mp3" type="audio/mpeg"></audio></th>
+		<th style="color:gray;"><p align="left">A música mais popular do jogo produzida pela banda:<br> The Living Tombstone</p></th>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const audios = document.querySelectorAll('audio');
+
+    audios.forEach(audio => {
+        audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                    otherAudio.currentTime = 0; // opcional: reseta o outro para o início
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
